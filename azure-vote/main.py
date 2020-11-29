@@ -28,6 +28,9 @@ else:
 # Redis configurations
 redis_server = os.environ['REDIS']
 
+# Version
+version = app.config['VERSION']
+
 # Redis Connection
 try:
     if "REDIS_PWD" in os.environ:
